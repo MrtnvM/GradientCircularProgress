@@ -52,6 +52,7 @@ class CircularProgressView : UIView {
                 let animation: CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
                 animation.duration = 0.8
                 animation.repeatCount = HUGE
+                animation.removedOnCompletion = false
                 animation.fromValue = NSNumber(float: 0.0)
                 animation.toValue = NSNumber(float: 2 * Float(M_PI))
                 
